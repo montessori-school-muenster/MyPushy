@@ -18,5 +18,19 @@ public class Spieler extends Actor
     {
         // Add your action code here.
         
-    }  
+        if(Greenfoot.isKeyDown("up"))
+        {
+        }
+            
+        else if(Greenfoot.isKeyDown("left"))
+        {
+        }
+        else if(Greenfoot.isKeyDown("right"))
+        {
+        }
+        
+        else if(Greenfoot.isKeyDown("down"))
+        {
+        }    
+	}
 }
