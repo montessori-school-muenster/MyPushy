@@ -18,15 +18,15 @@ public class Kiste extends Actor
      */
     public void act() 
     {
-        lampe();
-        
+        lampe();        
     }
+
     public boolean nahe(int x,int y)
     {
         mauer = (Mauer) getOneObjectAtOffset (x,y, Mauer.class);
         if (mauer ==null)
         {
-            
+
             kiste = (Kiste) getOneObjectAtOffset (x,y, Kiste.class);
             if (kiste ==null)
             {
@@ -35,6 +35,7 @@ public class Kiste extends Actor
             }return false;
         }return false;
     }
+
     public void lampe()
     {
         kistenZielfeld = (KistenZielfeld) getOneObjectAtOffset (0,0, KistenZielfeld.class);
